@@ -1,4 +1,4 @@
-package Lab2.ThreadSample;
+package Lab2.Sample.ThreadSample;
 
 public class comm1 {
     public static void main(String args[]) {

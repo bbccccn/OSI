@@ -1,4 +1,4 @@
-package Lab2.ThreadSample;
+package Lab2.Sample.ThreadSample;
 
 public class Proc2 implements Runnable {
     Resource1 q1;

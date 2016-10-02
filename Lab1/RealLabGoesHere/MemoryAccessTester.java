@@ -1,4 +1,4 @@
-package Lab1;
+package Lab1.RealLabGoesHere;
 
 public class MemoryAccessTester {
     private double t1;

@@ -1,4 +1,4 @@
-package Lab1;
+package Lab1.Sample;
 
 public class Hello {
     public static void main(String[] args) {

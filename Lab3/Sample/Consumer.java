@@ -2,27 +2,26 @@ package Lab3.Sample;
 
 // Cпоживач
 public class Consumer extends Thread {
-    private SynchronizedBuffer sharedLocation; // посилання на кiльцевий буфер
-    private int el_toread; // кiлькiсть елементiв, якi треба зчитати
-    // конструктор
-    public Consumer(SynchronizedBuffer shared, int ael_toread) {
+    private SynchronizedBuffer sharedLocation;
+    private int elementsToRead;
+
+    public Consumer(SynchronizedBuffer shared, int elementsToRead) {
         super("Consumer");
         sharedLocation = shared;
-        el_toread = ael_toread;
+        this.elementsToRead = elementsToRead;
     }
-    // зчитати el_toread елементiв i порахувати їх суму
+
     public void run() {
         int sum = 0;
-        for (int count = 1; count <= el_toread; count++) {
+        for (int count = 1; count <= elementsToRead; count++) {
             try {
-                Thread.sleep((int)(Math.random()*3001));
+                Thread.sleep((int) (Math.random() * 3001));
                 sum += sharedLocation.get();
             }
-            // якщо сплячий поток перервано, вивести дерево викликiв
-            catch(InterruptedException exception) {
+            catch (InterruptedException exception) {
                 exception.printStackTrace();
             }
         }
-        System.err.println(getName()+": "+el_toread+" значень зчитано. Сума: "+sum+".\nзавершення "+getName()+".\n");
+        System.err.println(getName() + ": " + elementsToRead + " значень зчитано. Сума: " + sum + ".\nзавершення " + getName() + ".\n");
     }
 }

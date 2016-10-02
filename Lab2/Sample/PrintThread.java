@@ -1,4 +1,4 @@
-package Lab2;
+package Lab2.Sample;
 
 // Класс  PrintThread  контролирует работу потоков
 public class PrintThread extends Thread {

@@ -1,4 +1,4 @@
-package Lab1;
+package Lab1.Sample;
 
 /* Програма обчислення середнього значення  двох чисел */
 public class SredZnach {

@@ -1,7 +1,7 @@
 package Lab3.Sample;
 
 public class Lab3 {
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         // Показати заголовки стовпцiв виведення
         StringBuffer columnHeads = new StringBuffer("Дiя\t\t\t\t");
         columnHeads.append("Буфер\tKiлькiсть зайнятих елементiв\n");

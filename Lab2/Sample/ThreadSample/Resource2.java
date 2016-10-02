@@ -1,4 +1,4 @@
-package Lab2.ThreadSample;
+package Lab2.Sample.ThreadSample;
 
 public class Resource2 {
     public boolean r2 = false;

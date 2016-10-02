@@ -1,4 +1,4 @@
-package Lab1;
+package Lab1.RealLabGoesHere;
 
 import java.util.Scanner;
 

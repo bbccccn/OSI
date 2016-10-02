@@ -1,4 +1,4 @@
-package Lab2;
+package Lab2.Sample;
 // Разные потоки выводят сообщения на экран в разные моменты времени.
 
 public class ThreadTester {
