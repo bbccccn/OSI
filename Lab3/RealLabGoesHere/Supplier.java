@@ -8,7 +8,7 @@ public class Supplier extends Thread {
     private int valuesToWrite; // кiлькiсть елементiв, якi треба записати
 
     public Supplier(VaultBuffer shared, int valuesToWrite) {
-        super("Producer");
+        super("Resource");
         sharedLocation = shared;
         this.valuesToWrite = valuesToWrite;
     }

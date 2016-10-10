@@ -7,7 +7,7 @@ public class Producer extends Thread {
 
     // конструктор
     public Producer(SynchronizedBuffer shared, int ael_towrite) {
-        super("Producer");
+        super("Resource");
         sharedLocation = shared;
         valuesToWrite = ael_towrite;
     }
