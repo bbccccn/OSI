@@ -4,6 +4,7 @@ public class Resource {
     String resName;
     boolean inUse = false;
 
+
     Resource(String resName) {
         this.resName = resName;
     }
@@ -21,6 +22,7 @@ public class Resource {
 
             inUse = false;
             notify();
-        } catch (InterruptedException e) {}
+        } catch (InterruptedException e) {
+        }
     }
 }

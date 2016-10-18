@@ -4,7 +4,7 @@ public class TProc implements Runnable {
     String procName;
     int procRAM;
     TResource ResList[];
-    Thread t;
+    Thread  t;
 
     public TProc(String procName, int procRAM, TResource ResList[]) {
         this.procRAM = procRAM;

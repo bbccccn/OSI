@@ -25,6 +25,5 @@ public class Lab3OSI {
                 consumers) {
             consumer.start();
         }
-
     }
 }
